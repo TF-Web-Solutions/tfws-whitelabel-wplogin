@@ -8,14 +8,14 @@ An open-source, white label Wordpress login page customization plugin.
 
 This minimalist Wordpress plugin was built to easily style the default login page. While staying as lean as possible, this plugin provides you with all your basic styling needs to give your Wordpress site's login page that custom feeling.
 
-This plugin is free, open-source, and designed for users who want to give their site an extra layer of customization without having to experience the dread of adding an extra plugin that clogs up your admin panel with popups. 
+This plugin is free, open-source, and designed for users who want to give their site an extra layer of customization without having to experience the dread of adding an extra plugin that clogs up their admin panel with popups. 
 
 ## How To Use
 
-- Download the plugin by clicking on the green "Code" button > Download ZIP.
-- Upload the plugin to your website and click <strong>Activate</strong>.
-- Navigate to the Customizer either from WP Admin (Appearance > Customize) or any other page (Customize in toolbar).
-- Click the plugin menu item <strong>White Label WP Login</strong>.
+- Download the plugin by clicking on the green *Code* button > Download ZIP.
+- Upload the plugin to your website and click *Activate*.
+- Navigate to the Customizer either from WP Admin (*Appearance* > *Customize*) or any other post/page (*Customize* in the toolbar).
+- Click the plugin menu item *White Label WP Login*.
 - Begin customizing your Login Page!
 
 ## Like Our Plugin?
