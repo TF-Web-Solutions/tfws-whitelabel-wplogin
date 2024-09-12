@@ -1,4 +1,4 @@
-# TFWS - White Label Wordpress Login
+# TFWS - White Label WP Login
 
 An open-source, white label Wordpress login page customization plugin.
 
