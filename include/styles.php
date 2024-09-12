@@ -3,6 +3,8 @@
 
 namespace TFWebSolutions\WhiteLabelWPLogin\Styles;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 add_action( 'login_head', __NAMESPACE__ . '\\login_styles' );
 
 function login_styles() {
@@ -35,7 +37,7 @@ function login_styles() {
 	?>
     <style type="text/css">
         body {
-            background: <?php echo $background_color ?>;
+            background: <?php echo esc_html( $background_color ) ?>;
         }
 
         .login form {
@@ -43,10 +45,10 @@ function login_styles() {
         }
 
         #login h1 a {
-            width: <?php echo $image[1] ?>px;
-            height: <?php echo $image[2] ?>px;
+            width: <?php echo esc_html( $image[1] ) ?>px;
+            height: <?php echo esc_html( $image[2] ) ?>px;
             background-size: cover;
-            background-image: url("<?php echo $image[0] ?>");
+            background-image: url("<?php echo esc_html( $image[0] ) ?>");
         }
 
         .wp-core-ui .button-primary, .wp-core-ui .button.button-large {
@@ -55,22 +57,22 @@ function login_styles() {
             padding: 0.25rem;
             margin-top: 1rem;
             font-size: 1rem;
-            color: <?php echo $login_button_text ?>;
-            background-color: <?php echo $login_button_color ?>;
-            border-color: <?php echo $login_button_border_color ?>;
+            color: <?php echo esc_html( $login_button_text ) ?>;
+            background-color: <?php echo esc_html( $login_button_color ) ?>;
+            border-color: <?php echo esc_html( $login_button_border_color ) ?>;
         }
 
         .wp-core-ui .button-primary:hover {
-            background: <?php echo $login_button_color_hover ?>;
-            border-color: <?php echo $login_button_border_color_hover ?>;
+            background: <?php echo esc_html( $login_button_color_hover ) ?>;
+            border-color: <?php echo esc_html( $login_button_border_color_hover ) ?>;
         }
 
         .login #backtoblog a, .login #nav a {
-            color: <?php echo $link_color ?>;
+            color: <?php echo esc_html( $link_color ) ?>;
         }
 
         .login #backtoblog a:hover, .login #nav a:hover {
-            color: <?php echo $link_color_hover ?>;
+            color: <?php echo esc_html( $link_color_hover ) ?>;
         }
     </style>
 	<?php
