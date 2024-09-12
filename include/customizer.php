@@ -7,6 +7,8 @@ use WP_Customize_Manager;
 use WP_Customize_Color_Control;
 use WP_Customize_Cropped_Image_Control;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 add_action( 'customize_register', __NAMESPACE__ . '\\create_customizer_tab' );
 
 /**
