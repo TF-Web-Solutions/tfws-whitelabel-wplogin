@@ -24,7 +24,7 @@ This theme, like WordPress, is distributed under the terms of GPL.
 
 == Changelog ==
 
-= 1.1.0 - 2024-09-11 =
+= 1.1.0 - 2024-09-12 =
 * Tweak: Remove redundant Admin Appearances menu link
 
 = 1.0.0 - 2024-09-10 =
