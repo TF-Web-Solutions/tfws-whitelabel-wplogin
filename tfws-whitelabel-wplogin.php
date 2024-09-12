@@ -5,7 +5,7 @@ namespace TFWebSolutions\WhiteLabelWPLogin;
 use WP;
 
 /**
- * Plugin Name:         TFWS - White Label WP Login
+ * Plugin Name:         White Label WP Login
  * Plugin URI:          https://tfwebsolutions.com/products-and-tools/tfws-whitelabel-wplogin/
  * Description:         An open-source, white label Wordpress login page customization plugin.
  * Version:             1.1.0

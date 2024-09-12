@@ -1,5 +1,5 @@
 
-=== TFWS - White Label WP Login ===
+=== White Label WP Login ===
 
 Contributors: thomasfinnegan14
 Requires at least: 5.2
