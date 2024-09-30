@@ -20,5 +20,6 @@ This plugin is free, open-source, and designed for users who want to give their 
 
 ## Like Our Plugin?
 
+- Rate the plugin on [WordPress.org](https://wordpress.org/support/plugin/white-label-wp-login/reviews/?filter=5)
 - Show some love by starring and sharing this repository.
 - Visit our website to see what else we are cooking up at [TF Web Solutions](https://tfwebsolutions.com/).
