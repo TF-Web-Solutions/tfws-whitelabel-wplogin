@@ -4,8 +4,8 @@
 Contributors: tfwebsolutions
 Requires at least: 5.2
 Tested up to: 6.6
-Stable tag: 1.1.0
-Version: 1.1.0
+Stable tag: 1.2.0
+Version: 1.2.0
 Requires PHP: 7.2
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -52,6 +52,10 @@ Customization options are edited from the Customizer. This can be accessed from 
 This theme, like WordPress, is distributed under the terms of GPL.
 
 == Changelog ==
+
+= 1.2.0 - 2024-10-9 =
+* Feature: Can update login button text color when hovering
+* Fix: Image cropping no longer enforced on image (SVG errors)
 
 = 1.1.0 - 2024-09-12 =
 * Tweak: Remove redundant Admin Appearances menu link

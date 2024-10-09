@@ -14,9 +14,13 @@ function login_styles() {
 
     // Set new image or use WP default
 	if ( $image ) {
-		$image = wp_get_attachment_image_src( $image, 'tfws-whitelabel-wplogin-loginimage' );
+		$image_url = $image;
+        $image_width = 'auto';
+        $image_height = 100;
 	} else {
-	    $image = [ admin_url( 'images/wordpress-logo.svg' ), '84', '84' ];
+	    $image_url = [ admin_url( 'images/wordpress-logo.svg' ), '84', '84' ];
+        $image_width = 84;
+        $image_height = 84;
     }
 
 	// Get the page background color
@@ -26,6 +30,7 @@ function login_styles() {
 	$login_button_color                 = get_theme_mod( 'tfws-whitelabel-wplogin-buttoncolor', '#084AF3' );
 	$login_button_color_hover           = get_theme_mod( 'tfws-whitelabel-wplogin-buttoncolor-hover', '#4175FC' );
 	$login_button_text                  = get_theme_mod( 'tfws-whitelabel-wplogin-buttontextcolor', '#F5F5F5' );
+    $login_button_text_hover            = get_theme_mod( 'tfws-whitelabel-wplogin-buttontextcolor-hover', '#F5F5F5' );
     $login_button_border_color          = get_theme_mod( 'tfws-whitelabel-wplogin-buttonbordercolor', '#084AF3' );
     $login_button_border_color_hover    = get_theme_mod( 'tfws-whitelabel-wplogin-buttonbordercolor-hover', '#4175FC' );
 
@@ -45,10 +50,10 @@ function login_styles() {
         }
 
         #login h1 a {
-            width: <?php echo esc_html( $image[1] ) ?>px;
-            height: <?php echo esc_html( $image[2] ) ?>px;
-            background-size: cover;
-            background-image: url("<?php echo esc_html( $image[0] ) ?>");
+            width: <?php echo esc_html( $image_width ) ?>;
+            height: <?php echo esc_html( $image_height ) ?>px;
+            background-size: contain;
+            background-image: url("<?php echo esc_html( $image_url ) ?>");
         }
 
         .wp-core-ui .button-primary, .wp-core-ui .button.button-large {
@@ -63,6 +68,7 @@ function login_styles() {
         }
 
         .wp-core-ui .button-primary:hover {
+            color: <?php echo esc_html( $login_button_text_hover ) ?>;
             background: <?php echo esc_html( $login_button_color_hover ) ?>;
             border-color: <?php echo esc_html( $login_button_border_color_hover ) ?>;
         }

@@ -5,7 +5,7 @@ namespace TFWebSolutions\WhiteLabelWPLogin\Customizer;
 
 use WP_Customize_Manager;
 use WP_Customize_Color_Control;
-use WP_Customize_Cropped_Image_Control;
+use WP_Customize_Image_Control;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -123,6 +123,30 @@ function create_customizer_tab( $wp_customize ) {
 		)
 	);
 
+	/**
+	 * Choose login button's text color when hovering
+     * 
+     * Default: #F5F5F5 (Off-White)
+	 */
+	$wp_customize->add_setting( 'tfws-whitelabel-wplogin-buttontextcolor-hover',
+		array(
+			'default' => '#F5F5F5',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'tfws-whitelabel-wplogin-buttontextcolor-hover',
+			array(
+                'settings' => 'tfws-whitelabel-wplogin-buttontextcolor-hover',
+                'section'  => 'tfws-whitelabel-wplogin',
+				'label'    => 'Login Button Text Hover Color',
+                'description'    => 'This changes the color of the login button text color when hovering.',
+			)
+		)
+	);
+
     /**
 	 * Choose login button's border color
      * 
@@ -225,7 +249,7 @@ function create_customizer_tab( $wp_customize ) {
 	$wp_customize->add_setting( 'tfws-whitelabel-wplogin-loginimage' );
 
 	$wp_customize->add_control(
-		new WP_Customize_Cropped_Image_Control(
+		new WP_Customize_Image_Control(
 			$wp_customize,
 			'tfws-whitelabel-wplogin-loginimage',
 			array(
