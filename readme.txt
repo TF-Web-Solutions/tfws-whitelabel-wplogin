@@ -3,9 +3,9 @@
 
 Contributors: tfwebsolutions
 Requires at least: 5.2
-Tested up to: 6.6
-Stable tag: 1.2.0
-Version: 1.2.0
+Tested up to: 6.7.1
+Stable tag: 1.2.1
+Version: 1.2.1
 Requires PHP: 7.2
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -52,6 +52,9 @@ Customization options are edited from the Customizer. This can be accessed from 
 This theme, like WordPress, is distributed under the terms of GPL.
 
 == Changelog ==
+
+= 1.2.1 - 2024-11-25 =
+* Test: Tested for WordPress version 6.7.1
 
 = 1.2.0 - 2024-10-9 =
 * Feature: Can update login button text color when hovering
