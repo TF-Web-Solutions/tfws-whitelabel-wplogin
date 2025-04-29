@@ -3,9 +3,9 @@
 
 Contributors: tfwebsolutions
 Requires at least: 5.2
-Tested up to: 6.7.1
-Stable tag: 1.2.1
-Version: 1.2.1
+Tested up to: 6.8
+Stable tag: 1.2.2
+Version: 1.2.2
 Requires PHP: 7.2
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -52,6 +52,9 @@ Customization options are edited from the Customizer. This can be accessed from 
 This theme, like WordPress, is distributed under the terms of GPL.
 
 == Changelog ==
+
+= 1.2.1 - 2025-04-29 =
+* Test: Tested for WordPress version 6.8
 
 = 1.2.1 - 2024-11-25 =
 * Test: Tested for WordPress version 6.7.1
