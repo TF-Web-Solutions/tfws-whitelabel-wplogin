@@ -8,7 +8,7 @@ use WP;
  * Plugin Name:         White Label WP Login
  * Plugin URI:          https://tfwebsolutions.com/products-and-tools/tfws-whitelabel-wplogin/
  * Description:         An open-source, white label Wordpress login page customization plugin.
- * Version:             1.2.3
+ * Version:             1.3.0
  * Requires at least:   5.2
  * Requires PHP:        7.2
  * Author:              TF Web Solutions
@@ -47,4 +47,16 @@ function replace_site_name() {
  */
 function logo_link_home() {
 	return home_url();
+}
+
+/**
+ * Add a menu item in the admin that links to the Customizer section.
+ */
+function add_admin_link() {
+    add_theme_page(
+        __( 'White Label WP Login', 'tfws-whitelabel-wplogin' ),
+        __( 'White Label WP Login', 'tfws-whitelabel-wplogin' ),
+        'manage_options',
+        'customize.php?autofocus[section]=tfws-whitelabel-wplogin'
+    );
 }
